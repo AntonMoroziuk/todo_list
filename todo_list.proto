@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message ListItem {
+  string text = 1;
+  bool done = 2;
+  uint64 id = 3;
+}
+
+message ToDoList {
+  repeated ListItem items = 1;
+}
